@@ -4,6 +4,8 @@ This project focuses on the installation, setup, and network configuration of Ka
 
 I have recorded the steps in this README including screenshots for reference.
 
+--
+
 ## Objectives 
 
 - Install kali Linux
