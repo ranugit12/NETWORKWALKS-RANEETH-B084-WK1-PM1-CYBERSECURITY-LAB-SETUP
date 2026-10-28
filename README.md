@@ -32,7 +32,7 @@ I have recorded the steps in this README including screenshots for reference.
 I installed 7-zip to extract the Kali Linux virtual-machine package and extract into a new folder so I don't jumble up the files and fill up storage. 
 
 ### Step 2. Install VirtualBox and import Kali iso.
-I installed VirtualBox 7.2.8 and imported the Kali VM using the **New** option. If you downloaded the `.vbox` use the **import** option.
+I installed VirtualBox 7.2.8 and imported the Kali VM you downloaded using the **New** option. If you downloaded the `.vbox` use the **import** option.
 
 <img width="1917" height="1015" alt="Virtualbox_installation" src="https://github.com/user-attachments/assets/fe1709b4-559a-4de6-a68d-2621cc3c740f" />
 <img width="1917" height="987" alt="image" src="https://github.com/user-attachments/assets/b8d4db04-c59f-4980-afc5-7335d29dc387" />
@@ -73,15 +73,36 @@ After the whole setup, I took a snapshot of the lab and named it `Cybersecurity 
 
 ## 5. What have I learnt from this project.
 ### The difference between NAT and NAT networks.
--NAT: NAT assigns each virtual machine its own private subnet behind a separate virtual router, which means VMs are completely isolated from one another and cannot communicate directly; they can only reach the internet through the host's connection, and the host can only reach a VM via port forwarding. This makes it the simplest and most common default for a single VM that just needs outbound internet access.
--NAT Network: It places all VMs on a single subnet so they can communicate with each other without port forwarding while retaining internet access through the host.
+- NAT: NAT assigns each virtual machine its own private subnet behind a separate virtual router, which means VMs are completely isolated from one another and cannot communicate directly; they can only reach the internet through the host's connection, and the host can only reach a VM via port forwarding. This makes it the simplest and most common default for a single VM that just needs outbound internet access.
+- NAT Network: It places all VMs on a single subnet so they can communicate with each other without port forwarding while retaining internet access through the host.
 
 ## 6. Problems encountered in this project and how I overcame them.
-### Problem 1.
-During the installation of Kali Linux, an error message popped up saying **Unexpected token**. I scanned my PC to check for any problems and found out that my `C:` Drive (Where I downloaded my Kali Linux ISO) was out of storage. After cleaning the C Drive, showed the same error. Then I found out that after increasing the RAM from 2048 MB to 8192 MB the installation was successful.
+### Problem 1. Error message during installation.
+During the installation of Kali Linux, an error message popped up saying **Unexpected token**. I manually scanned my PC to check for any problems and found out that my `C:` Drive (Where I downloaded my Kali Linux ISO) was out of storage. After cleaning the C Drive, showed the same error. Then I found out that after increasing the RAM from 2048 MB to 8192 MB the installation was successful.
 
 ### fix 1.
 Increased the RAM to 8192 MB for better performance and cleaned up my `C:` Drive.
 
-### Problem 2.
+### Problem 2. Internet connectivity problem.
+After manually configuring IPv4 settings, my internet connection failed.
 
+I used the command below to fix the problem: 
+
+``` bash
+sudo nmcli connection modify "Wired connection 1" ipv4.dad-timeout 0
+```
+But the connection was still not active. 
+
+### Fix 2
+So I reset the network configurations and the connection was successfully activated.
+
+## 7. Resources.
+https://www.kali.org/
+https://www.7-zip.org/
+https://www.virtualbox.org/
+
+## 8. Author
+**Raneeth Jayaratne** | Cybersecurity intern @ NETWORKWALKS - B084
+
+## Project information
+*Project Name:* Cybersecurity lab setup | Week 1 
