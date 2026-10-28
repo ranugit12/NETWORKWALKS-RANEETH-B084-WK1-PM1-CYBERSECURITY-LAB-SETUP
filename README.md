@@ -80,7 +80,7 @@ After the whole setup, I took a snapshot of the lab and named it `Cybersecurity 
 ### Problem 1. Error message during installation.
 During the installation of Kali Linux, an error message popped up saying **Unexpected token**. I manually scanned my PC to check for any problems and found out that my `C:` Drive (Where I downloaded my Kali Linux ISO) was out of storage. After cleaning the C Drive, showed the same error. Then I found out that after increasing the RAM from 2048 MB to 8192 MB the installation was successful.
 
-### fix 1.
+### Fix 1.
 Increased the RAM to 8192 MB for better performance and cleaned up my `C:` Drive.
 
 ### Problem 2. Internet connectivity problem.
