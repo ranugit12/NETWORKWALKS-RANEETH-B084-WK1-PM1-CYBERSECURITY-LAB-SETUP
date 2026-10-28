@@ -97,9 +97,9 @@ But the connection was still not active.
 So I reset the network configurations and the connection was successfully activated.
 
 ## 7. Resources.
-https://www.kali.org/
-https://www.7-zip.org/
-https://www.virtualbox.org/
+- https://www.kali.org/
+- https://www.7-zip.org/
+- https://www.virtualbox.org/
 
 ## 8. Author
 **Raneeth Jayaratne** | Cybersecurity intern @ NETWORKWALKS - B084
