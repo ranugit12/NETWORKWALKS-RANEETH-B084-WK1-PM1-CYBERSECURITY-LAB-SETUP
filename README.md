@@ -102,7 +102,7 @@ So I reset the network configurations and the connection was successfully activa
 - https://www.virtualbox.org/
 
 ## 8. Author
-**Raneeth Jayaratne** | Cybersecurity intern @ NETWORKWALKS - B084
+Raneeth Jayaratne 
 
 ## Project information
 *Project Name:* Cybersecurity lab setup | Week 1 
