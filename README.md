@@ -41,4 +41,4 @@ I installed VirtualBox 7.2.8 and imported the Kali VM using the **New** option.
 In VirtualBox, go to the **Network** tab and change the name of the network to `NatNetwork` and input the network subnet in the IPv4 Prefix field `10.0.0.0/24`.
 <img width="1917" height="1020" alt="Network_Configuration" src="https://github.com/user-attachments/assets/6f8a8858-bef4-4ff8-a81b-a47e44462551" />
 
-## Step 4. 
+## Step 4. Check for 
